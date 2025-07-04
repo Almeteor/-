@@ -7,34 +7,169 @@
     <meta name="description" content="تأجير جميع مستلزمات المناسبات بالشرقية: كراسي شفاف/عادي، طاولات مستطيلة/دائرية، خيام، جلسات أرضية ومرتفعة، زوالي، أجهزة صوت وليزر. اتصل الآن: 0559534118">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background: url('https://i.postimg.cc/2y90KBtP/IMG-2371.jpg') no-repeat center center fixed;
-            background-size: cover;
+            font-family: 'Tajawal', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5;
         }
         .header {
-            background-color: rgba(0,0,0,0.7);
+            background: url('https://i.postimg.cc/2y90KBtP/IMG-2371.jpg') no-repeat center center;
+            background-size: cover;
             color: white;
-            padding: 20px;
             text-align: center;
+            padding: 80px 20px;
+            position: relative;
+        }
+        .header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.6);
+            z-index: 1;
+        }
+        .header-content {
+            position: relative;
+            z-index: 2;
         }
         .whatsapp-btn {
             background-color: #25D366;
             color: white;
-            padding: 10px 20px;
+            padding: 12px 25px;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 30px;
             display: inline-block;
-            margin-top: 10px;
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        .whatsapp-btn:hover {
+            background-color: #128C7E;
+            transform: translateY(-3px);
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .service-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+        .service-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .service-info {
+            padding: 20px;
+        }
+        .service-info h3 {
+            margin-top: 0;
+            color: #333;
+        }
+        .service-info p {
+            color: #666;
+            line-height: 1.6;
+        }
+        .contact-bar {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 18px;
         }
     </style>
 </head>
 <body>
+    <!-- القسم العلوي -->
     <div class="header">
-        <h1>تأجير مستلزمات المناسبات بالمنطقة الشرقية</h1>
-        <p>كراسي - طاولات - كنب - خيام - جلسات شعبية - أجهزة صوت</p>
-        <a href="https://wa.me/966559534118" class="whatsapp-btn">تواصل عبر واتساب: 0559534118</a>
+        <div class="header-content">
+            <h1 style="font-size: 2.5em; margin-bottom: 10px;">تأجير مستلزمات المناسبات بالمنطقة الشرقية</h1>
+            <p style="font-size: 1.2em; margin-bottom: 20px;">كراسي - طاولات - كنب - خيام - جلسات شعبية - أجهزة صوت</p>
+            <a href="https://wa.me/966559534118" class="whatsapp-btn">تواصل عبر واتساب: 0559534118</a>
+        </div>
     </div>
 
-    <!-- سأرسل لك باقي الأقسام بعد موافقتك على هذا الهيكل -->
+    <!-- شبكة الخدمات -->
+    <div class="services-grid">
+        <!-- كراسي -->
+        <div class="service-card">
+            <img src="https://i.postimg.cc/vBvtx6Lp/46d351d7-91d2-4d35-8424-f4342844f1c6.jpg" alt="تأجير كراسي شفاف">
+            <div class="service-info">
+                <h3>تأجير كراسي فاخرة</h3>
+                <p>كراسي شفاف وعادي بجودة عالية لجميع المناسبات</p>
+                <a href="https://wa.me/966559534118?text=أريد الاستفسار عن تأجير الكراسي" class="whatsapp-btn" style="padding: 8px 15px; font-size: 14px;">استفسر الآن</a>
+            </div>
+        </div>
+
+        <!-- طاولات -->
+        <div class="service-card">
+            <img src="https://i.postimg.cc/QCtnqrmN/30c62dd9-e62e-40b9-9521-0b02920d9691.jpg" alt="تأجير طاولات زجاج">
+            <div class="service-info">
+                <h3>تأجير طاولات مميزة</h3>
+                <p>طاولات مستطيلة ودائرية بمواد عالية الجودة</p>
+                <a href="https://wa.me/966559534118?text=أريد الاستفسار عن تأجير الطاولات" class="whatsapp-btn" style="padding: 8px 15px; font-size: 14px;">استفسر الآن</a>
+            </div>
+        </div>
+
+        <!-- كنب -->
+        <div class="service-card">
+            <img src="https://i.postimg.cc/dVN4fLFp/IMG-2309.jpg" alt="تأجير كنب">
+            <div class="service-info">
+                <h3>تأجير كنب فاخر</h3>
+                <p>كنب مفرد وثلاثي بأنواع وألوان مختلفة</p>
+                <a href="https://wa.me/966559534118?text=أريد الاستفسار عن تأجير الكنب" class="whatsapp-btn" style="padding: 8px 15px; font-size: 14px;">استفسر الآن</a>
+            </div>
+        </div>
+
+        <!-- خيام -->
+        <div class="service-card">
+            <img src="https://i.postimg.cc/J7dwgyjr/c60ae1e5-6514-4989-9c1b-ddf978c41be4.jpg" alt="تأجير خيام">
+            <div class="service-info">
+                <h3>تأجير خيام متميزة</h3>
+                <p>جميع أنواع الخيام للمناسبات والأحداث</p>
+                <a href="https://wa.me/966559534118?text=أريد الاستفسار عن تأجير الخيام" class="whatsapp-btn" style="padding: 8px 15px; font-size: 14px;">استفسر الآن</a>
+            </div>
+        </div>
+
+        <!-- جلسات شعبية -->
+        <div class="service-card">
+            <img src="https://i.postimg.cc/zBCQfBcQ/IMG-2374.jpg" alt="تأجير جلسات شعبية">
+            <div class="service-info">
+                <h3>تأجير جلسات شعبية</h3>
+                <p>جلسات أرضية ومرتفعة بلمسة تراثية</p>
+                <a href="https://wa.me/966559534118?text=أريد الاستفسار عن تأجير الجلسات الشعبية" class="whatsapp-btn" style="padding: 8px 15px; font-size: 14px;">استفسر الآن</a>
+            </div>
+        </div>
+
+        <!-- أجهزة صوت -->
+        <div class="service-card">
+            <img src="https://i.postimg.cc/v8f1Q6tz/IMG-2083.png" alt="تأجير أجهزة صوت">
+            <div class="service-info">
+                <h3>تأجير أجهزة صوت</h3>
+                <p>مكبرات صوت بلوتوث وأجهزة دي جي احترافية</p>
+                <a href="https://wa.me/966559534118?text=أريد الاستفسار عن تأجير أجهزة الصوت" class="whatsapp-btn" style="padding: 8px 15px; font-size: 14px;">استفسر الآن</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- شريط الاتصال السفلي -->
+    <div class="contact-bar">
+        للاستفسار أو الحجز: <a href="tel:0559534118" style="color: #25D366; text-decoration: none;">0559534118</a> | 
+        <a href="https://wa.me/966559534118" style="color: #25D366; text-decoration: none;">واتساب</a>
+    </div>
 </body>
 </html>
